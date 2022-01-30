@@ -99,3 +99,15 @@ switch zelect{
     case 4 : print("Divide", Double(zumber1)/Double(zumber2))
     default : print("Selection is null")
 }
+
+// Optional Binding
+
+var str:String?
+//str = "test"
+if let test = str{
+    print(test) // Automatic unwrapping
+}
+else{
+    print("Error! str is nil")
+}
+
