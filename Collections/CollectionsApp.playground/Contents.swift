@@ -227,3 +227,9 @@ var dersler1 = dersnotlar.keys
 var notlar1 = dersnotlar.values
 print(dersler1)
 print(notlar1)
+
+// DICTIONARY FILTER
+
+var school:[Int:String] = [154:"Ali",67:"Mehmet",488:"Veli"]
+var rsonuc1 = school.filter({$0.key > 100})
+print(rsonuc1)
