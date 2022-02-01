@@ -28,3 +28,33 @@ class Mercedes:Vehicle{
 }
 
 var car = Car(type: "Hatchback", color: "Red", gearbox: "Manuel")
+
+// EXAMPLE
+
+class Ev{
+    var pencereSayisi:Int?
+    init(penceresayisi:Int) {
+        self.pencereSayisi = penceresayisi
+    }
+}
+
+class Saray:Ev{
+    var kuleSayisi:Int?
+    init(kuleSayisi:Int,pencereSayisi:Int) {
+        self.kuleSayisi = kuleSayisi
+        super.init(penceresayisi: pencereSayisi)
+    }
+}
+
+class Villa:Ev{
+    var garajVarMi:Bool?
+    init(garajVarMi:Bool,pencereSayisi:Int) {
+        self.garajVarMi = garajVarMi
+        super.init(penceresayisi: pencereSayisi)
+    }
+}
+
+var topkapi = Saray(kuleSayisi: 5, pencereSayisi: 15)
+var bogazdakiVilla = Villa(garajVarMi: true, pencereSayisi: 8)
+
+
